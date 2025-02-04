@@ -34,6 +34,7 @@ public class EmployeRestController {
         return employeService.saveEmploye(employe);
     }
 
+    // pour mettre a jour plusieurs enployes on utilise un patch
     @PutMapping("/employes/{id}")
     public Employe updateEmploye(@PathVariable Long id, @RequestBody  Employe employe) {
         return employeService.updateEmploye(id, employe);
